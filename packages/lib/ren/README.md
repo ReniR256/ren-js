@@ -75,7 +75,7 @@ const burn = async () => {
 
     const burnAndRelease = await new RenJS("testnet").burnAndRelease({
         asset: "BTC",
-        to: Bitcoin().Address("miMi2VET41YV1j6SDNTeZoPBbmH8B4nEx6"),
+        to: Bitcoin().Address("BBbBBHpVybDUp62pCtya9pbzXhnpeeCJzM"),
         from: Ethereum(provider.provider).Account({ value }),
     });
 
