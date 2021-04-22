@@ -4,7 +4,7 @@ import { fromBase64, fromHex, hash160 } from "@renproject/utils";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 
-import { Bitcoin, BitcoinCash, DigiByte, Dogecoin, Zcash } from "../src";
+import { Bitcoin, BitcoinCash, DigiByte, Dogecoin, Bitblocks, Zcash } from "../src";
 
 const testcases = [
     {
