@@ -3,10 +3,10 @@ import { RenNetwork } from "@renproject/interfaces";
 import { fromBase64, fromHex, hash160 } from "@renproject/utils";
 import { describe, it } from "mocha";
 
-import { Bitcoin, BitcoinCash, Dogecoin, Zcash } from "../src";
+import { Bitcoin, BitcoinCash, Dogecoin, Bitblocks, Zcash } from "../src";
 
 describe("Common", () => {
-    for (const ChainClass of [Bitcoin, Zcash, BitcoinCash, Dogecoin]) {
+    for (const ChainClass of [Bitcoin, Zcash, BitcoinCash, Bitblocks, Dogecoin]) {
         for (const network of [RenNetwork.Mainnet, RenNetwork.Testnet]) {
             it(ChainClass.asset, async () => {
                 const chain = new ChainClass();
